@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iguanas Casino</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+  <!-- Facebook Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1766546837196355');
+  fbq('track', 'PageView');
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTL48C4Z98"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XTL48C4Z98');
+  </script>
+
+  <style>
+    body {
+      font-family: 'Kanit', sans-serif;
+      background-color: #000000; /* Negro */
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #FFD700; /* dorado */
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #FFD700; /* dorado */
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      background-color: #D41F1F; /* rojo brillante */
+      color: white;
+      padding: 22px 40px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(255, 204, 0, 0.5);
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #a91414;
+      transform: scale(1.05);
+      box-shadow: 0 8px 18px rgba(255, 204, 0, 0.6);
+    }
+
+    .whatsapp-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .footer {
+      margin-top: 35px;
+      font-size: 18px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+
+    .footer p:first-child {
+      font-weight: bold;
+      color: #FFCC00; /* más amarillo para destacar */
+    }
+
+    .footer p:last-child {
+      color: #C0C0C0; /* gris claro como "CASINO" */
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1766546837196355&ev=PageView&noscript=1" />
+  </noscript>
+
+  <div class="container">
+    <img src="avatar.jpeg" alt="Avatar" class="avatar">
+    <h1>ENVIANOS UN WHATSAPP PARA CREAR TU CUENTA</h1>
+
+    <a href="#" class="cta-btn" onclick="openRandomLink()">
+      <span>DUPLICAMOS TU PRIMERA CARGA!</span>
+      <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <div class="footer">
+      <p>100% EN TU PRIMERA CARGA!!</p>
+      <p>Mínimo de Carga $1000</p>
+      <p>Ruleta en Vivo - Slots - Apuestas Deportivas y Mucho más.</p>
+    </div>
+  </div>
+
+  <script>
+    function openRandomLink() {
+      const links = [
+        'https://wa.me/5491137577945?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/5491154600592?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/5491133216199?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/5491171318336?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/5491155177784?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/5491122738382?text=Hola%2C%20quiero%20mi%20usuario',
+        'https://wa.me/5491155176883?text=Hola%2C%20quiero%20mi%20usuario'
+      ];
+
+      const randomLink = links[Math.floor(Math.random() * links.length)];
+      window.location.href = randomLink;
+    }
+  </script>
+</body>
+</html>
